@@ -1,0 +1,59 @@
+{
+    "name": "kraenkvisuell/nova-content-blocks",
+    "description": "Content Block Package for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova",
+        "content blocks"
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        },
+        {
+            "type": "path",
+            "url": "../nova-flexible-content",
+            "symlink": true
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "manogi/nova-tiptap": "^0.6.0",
+        "optimistdigital/nova-media-field": "^1.2",
+        "optimistdigital/nova-translatable": "^1.5",
+        "spatie/laravel-translatable": "^4.4",
+        "whitecube/nova-flexible-content": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kraenkvisuell\\NovaContentBlocks\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kraenkvisuell\\NovaContentBlocks\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "laravel/nova": "~3.0",
+        "orchestra/testbench": "^5.3",
+        "phpunit/phpunit": "^9.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kraenkvisuell\\NovaContentBlocks\\NovaContentBlocksServiceProvider"
+            ],
+            "aliases": [
+                "Kraenkvisuell\\NovaContentBlocks\\Facades\\ContentBlock"
+            ]
+        }
+    }
+}
