@@ -11,6 +11,11 @@
         {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        {
+            "type": "path",
+            "url": "../nova-flexible-content",
+            "symlink": true
         }
     ],
     "require": {
@@ -19,7 +24,7 @@
         "optimistdigital/nova-media-field": "^1.2",
         "optimistdigital/nova-translatable": "^1.5",
         "spatie/laravel-translatable": "^4.4",
-        "kraenkvisuell/nova-flexible-content": "*"
+        "whitecube/nova-flexible-content": "dev-master"
     },
     "autoload": {
         "psr-4": {

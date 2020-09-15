@@ -5,7 +5,7 @@ namespace Kraenkvisuell\NovaContentBlocks;
 use Manogi\Tiptap\Tiptap;
 use Laravel\Nova\Fields\Textarea;
 use OptimistDigital\MediaField\MediaField;
-use Kraenkvisuell\NovaFlexibleContent\Flexible;
+use Whitecube\NovaFlexibleContent\Flexible;
 
 class ContentBlock
 {
