@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">=7.3.0",
-        "manogi/nova-tiptap": "^0.6.0",
+        "manogi/nova-tiptap": "^1.0",
         "optimistdigital/nova-media-field": "^1.2",
         "optimistdigital/nova-translatable": "^1.5",
         "spatie/laravel-translatable": "^4.4",
