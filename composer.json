@@ -47,7 +47,8 @@
                 "Kraenkvisuell\\NovaContentBlocks\\NovaContentBlocksServiceProvider"
             ],
             "aliases": [
-                "Kraenkvisuell\\NovaContentBlocks\\Facades\\ContentBlock"
+                "Kraenkvisuell\\NovaContentBlocks\\Facades\\ContentBlock",
+                "Kraenkvisuell\\NovaContentBlocks\\Facades\\ContentBlockLayout"
             ]
         }
     }
