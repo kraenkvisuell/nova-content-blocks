@@ -2,10 +2,11 @@
 
 namespace Kraenkvisuell\NovaContentBlocks;
 
-use Laravel\Nova\Fields\Select;
 use Manogi\Tiptap\Tiptap;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Textarea;
 use OptimistDigital\MediaField\MediaField;
+use ClassicO\NovaMediaLibrary\MediaLibrary;
 use Whitecube\NovaFlexibleContent\Flexible;
 
 class ContentBlockLayout
@@ -28,14 +29,14 @@ class ContentBlockLayout
                             'italic',
                             'link',
                             'blockquote',
+                            'bullet_list',
                         ])
                         ->headingLevels([1, 2, 3, 4, 5])
                         ->translatable()
                         ->stacked();
                 } elseif ($availableField == 'images') {
-                    $subFields[] = MediaField::make(__('images'), $availableField)
-                        ->multiple()
-                        ->collection('page');
+                    $subFields[] = MediaLibrary::make(__('images'), $availableField)
+                        ->array();
                 } elseif ($availableField == 'images_caption') {
                     $subFields[] = Tiptap::make(__('image caption'), 'caption')
                         ->buttons([
